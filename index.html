@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yusefee - Contact</title>
+  <title>Yusefee Delgado | Manufacturer's Representative</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,10 @@
 
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #0a0e17;
+      background: #0f172a;
       color: #e2e8f0;
       min-height: 100vh;
-      background-image: 
-        radial-gradient(circle at 15% 50%, rgba(0, 255, 200, 0.06) 0%, transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(0, 180, 255, 0.05) 0%, transparent 30%);
-      background-attachment: fixed;
+      line-height: 1.6;
     }
 
     .container {
@@ -38,54 +35,97 @@
       justify-content: space-between;
       align-items: center;
       padding: 2.5rem 0 4rem;
+      border-bottom: 1px solid rgba(59, 85, 155, 0.3);
     }
 
     .logo {
-      font-size: 1.75rem;
+      font-size: 2.1rem;
       font-weight: 700;
       letter-spacing: -1px;
-      color: white;
+      color: #ffffff;
     }
 
     .logo span {
-      color: #00f0d0;
+      color: #22d3ee;
     }
 
     nav a {
-      color: #94a3b8;
+      color: #cbd5e1;
       text-decoration: none;
       font-weight: 500;
+      margin-left: 2rem;
       transition: color 0.2s;
     }
 
     nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 0 5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      color: #ffffff;
+    }
+
+    .hero .subtitle {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #94a3b8;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(59, 85, 155, 0.4);
+      border-radius: 16px;
+      padding: 3rem 2.8rem;
+      max-width: 680px;
+      margin: 0 auto 4rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1.8rem;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .value-props {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0 3rem;
+    }
+
+    .value-item {
+      text-align: center;
+    }
+
+    .value-item h3 {
+      font-size: 1.15rem;
+      margin: 1rem 0 0.6rem;
       color: #e2e8f0;
     }
 
-    .form-wrapper {
-      max-width: 620px;
-      margin: 0 auto;
-      background: rgba(15, 23, 42, 0.72);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(30, 41, 59, 0.6);
-      border-radius: 16px;
-      padding: 3rem 2.5rem;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-    }
-
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 700;
-      margin-bottom: 2.5rem;
-      color: white;
-      text-align: center;
+    .value-item p {
+      color: #94a3b8;
+      font-size: 0.98rem;
     }
 
     .form-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.5rem 2rem;
+      gap: 1.6rem 2rem;
     }
 
     .form-group.full {
@@ -94,7 +134,7 @@
 
     .form-group label {
       display: block;
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       font-weight: 500;
       margin-bottom: 0.6rem;
       color: #cbd5e1;
@@ -107,42 +147,36 @@
 
     input, textarea, select {
       width: 100%;
-      padding: 0.95rem 1.1rem;
-      background: rgba(30, 41, 59, 0.6);
-      border: 1px solid rgba(59, 73, 99, 0.7);
-      border-radius: 8px;
-      color: white;
+      padding: 0.95rem 1.2rem;
+      background: rgba(30, 41, 68, 0.5);
+      border: 1px solid rgba(71, 85, 119, 0.6);
+      border-radius: 10px;
+      color: #f1f5f9;
       font-size: 1rem;
-      transition: all 0.2s ease;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
 
     input:focus, textarea:focus, select:focus {
       outline: none;
-      border-color: #00f0d0;
-      box-shadow: 0 0 0 3px rgba(0, 240, 208, 0.18);
-      background: rgba(30, 41, 59, 0.8);
+      border-color: #22d3ee;
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
     }
 
     input::placeholder, textarea::placeholder {
       color: #64748b;
     }
 
-    .phone-wrapper {
-      position: relative;
+    .phone-group {
+      display: flex;
+      gap: 1rem;
     }
 
-    .phone-prefix {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #94a3b8;
-      pointer-events: none;
-      font-size: 1.1rem;
+    .phone-group select {
+      flex: 0 0 40%;
     }
 
-    .phone-input {
-      padding-left: 3.2rem !important;
+    .phone-group input {
+      flex: 1;
     }
 
     textarea {
@@ -152,43 +186,47 @@
 
     .submit-btn {
       grid-column: 1 / -1;
-      margin-top: 1.5rem;
+      margin-top: 1.8rem;
       padding: 1.1rem;
-      background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 50%, #14b8a6 100%);
+      background: linear-gradient(90deg, #0ea5e9, #22d3ee);
       color: white;
       font-size: 1.05rem;
       font-weight: 600;
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 10px 25px rgba(14, 165, 233, 0.25);
+      transition: all 0.25s ease;
     }
 
     .submit-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 15px 35px rgba(14, 165, 233, 0.35);
+      box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
     }
 
     .footer {
       text-align: center;
       color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 5rem;
-      padding-bottom: 3rem;
+      font-size: 0.92rem;
+      padding: 3rem 0;
+      border-top: 1px solid rgba(59, 85, 155, 0.2);
     }
 
     @media (max-width: 640px) {
-      .form-grid {
+      .form-grid, .phone-group {
         grid-template-columns: 1fr;
       }
-      
-      .form-wrapper {
-        padding: 2.2rem 1.6rem;
+      .phone-group {
+        flex-direction: column;
+        gap: 1rem;
       }
-      
-      header {
-        padding: 1.8rem 0 3rem;
+      .phone-group select {
+        flex: none;
+      }
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+      .card {
+        padding: 2.2rem 1.8rem;
       }
     }
   </style>
@@ -197,64 +235,98 @@
 
   <div class="container">
     <header>
-      <div class="logo">|| <span>YUSEFEE</span></div>
+      <div class="logo">YUSEFEE <span>A&D</span></div>
       <nav>
-        <a href="#">Home</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
 
-    <div class="form-wrapper">
-      <h1>Contact us:</h1>
+    <section class="hero">
+      <h1>Manufacturer's Representative – Tijuana, Monterrey, Ciudad Juarez, México City & and other main cities in México</h1>
+      <p class="subtitle">
+        Connecting leading manufacturers with key buyers, distributors, and OEMs in industrial, automation, components, and engineered solutions sectors.
+      </p>
+    </section>
 
-      <form action="https://script.google.com/macros/s/AKfycbxNjSoUczK_a46RJPo96pIiDGl1RujUCDxQEXYN6HyeBpxDeKqc8BxOceAz0ORQRP2z/exec" method="POST">
+    <div class="card">
+      <h2>Get in Touch</h2>
+
+      <div class="value-props">
+        <div class="value-item">
+          <h3>Strategic Territory Coverage</h3>
+          <p>Focused representation across Ontario and Eastern Canada with deep market knowledge.</p>
+        </div>
+        <div class="value-item">
+          <h3>Established Relationships</h3>
+          <p>Long-term connections with engineers, procurement teams, and decision-makers.</p>
+        </div>
+        <div class="value-item">
+          <h3>Principal Support</h3>
+          <p>Dedicated advocacy for your brand — technical seminars, product training, and market expansion.</p>
+        </div>
+      </div>
+
+      <form action="https://shorturl.at/REuqk" method="POST">
         <div class="form-grid">
 
           <div class="form-group">
-            <label for="first">First name</label>
+            <label for="first">First Name</label>
             <input type="text" id="first" name="first_name" placeholder="First name">
           </div>
 
           <div class="form-group">
-            <label for="last">Last name</label>
+            <label for="last">Last Name</label>
             <input type="text" id="last" name="last_name" placeholder="Last name">
           </div>
 
           <div class="form-group required">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="email">Business Email</label>
+            <input type="email" id="email" name="email" placeholder="your@company.com" required>
           </div>
 
           <div class="form-group">
-            <label for="phone">Phone</label>
-            <div class="phone-wrapper">
-              <span class="phone-prefix">🇨🇦 +1</span>
-              <input type="tel" id="phone" name="phone_number" class="phone-input" placeholder="Phone">
+            <label for="country_code">Phone</label>
+            <div class="phone-group">
+              <select name="country_code" id="country_code">
+                <option value="+1" selected>+1 (CA/US)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+61">+61 (AU)</option>
+                <option value="+91">+91 (IN)</option>
+                <option value="+49">+49 (DE)</option>
+                <option value="+33">+33 (FR)</option>
+                <option value="+81">+81 (JP)</option>
+                <option value="+86">+86 (CN)</option>
+                <option value="+52">+52 (MX)</option>
+                <option value="+55">+55 (BR)</option>
+                <!-- Add more international codes if targeting global principals -->
+              </select>
+              <input type="tel" id="phone_number" name="phone_number" placeholder="Phone number">
             </div>
           </div>
 
           <div class="form-group full">
-            <label for="company">Company name</label>
-            <input type="text" id="company" name="company_name" placeholder="Company name">
+            <label for="company">Company / Principal Name</label>
+            <input type="text" id="company" name="company_name" placeholder="Your company or brand you represent">
           </div>
 
           <div class="form-group full">
-            <label for="website">Company website</label>
+            <label for="website">Company Website</label>
             <input type="url" id="website" name="company_website" placeholder="https://">
           </div>
 
           <div class="form-group full required">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+            <label for="message">Inquiry / Opportunity</label>
+            <textarea id="message" name="message" placeholder="Tell us about your product line, target market, or how we can support your sales goals in Canada..." required></textarea>
           </div>
 
-          <button type="submit" class="submit-btn">Submit</button>
+          <button type="submit" class="submit-btn">Send Inquiry</button>
 
         </div>
       </form>
     </div>
 
     <div class="footer">
-      © 2025 by Yusefee.
+      © 2026 Yusefee Delgado – Manufacturer's Representative | Tijuana, B.C., México
     </div>
   </div>
 
